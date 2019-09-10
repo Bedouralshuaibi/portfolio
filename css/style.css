@@ -1,0 +1,222 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  color: #222;
+  background: #f7f5f0;
+}
+p
+{
+  font-size: .9em;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+header {
+  line-height: 2;
+  text-align: center;
+  background-image: url('../img/udacity-logo.svg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+header .profile-image {
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: all .5s;
+  border: white solid 2px;
+}
+header .profile-image:hover
+{
+  transform: scale(1.2) rotate(5deg);
+}
+
+header p
+{
+  margin-top: -35px;
+}
+footer
+{
+  height: 70px;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Hepta Slab', serif;
+  font-weight: 100;
+  font-size: .9em;
+}
+footer p
+{
+  padding: 10px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+/* ---- Navigation ---- */
+
+.main-nav
+{
+   width: 100%;
+   background-color: #2d3c49;
+   padding: 5px;
+   text-align: center;
+
+}
+.stick
+{
+  position: sticky;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav
+{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 9px;
+  align-items: center;
+
+
+}
+.nav .name
+{
+  display: block;
+  margin-right: auto;
+  font-size: 1.2em;
+  font-weight: bolder;
+
+}
+.nav a
+{
+
+  text-decoration: none;
+  color: white;
+
+  font-size: 16px;
+}
+.droplist
+{
+overflow: hidden;
+padding: 0px;
+}
+
+.droplist .dropbtn
+{
+ font-size: 16px;
+border: none;
+ outline: none;
+ color: white;
+ margin: 0 auto;
+ background-color: #2d3c49;
+ overflow: hidden;
+
+}
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  margin: auto 0;
+
+}
+
+.dropdown-content a
+{
+  float: none;
+  display: block;
+  padding:15px;
+  border-bottom:.5px solid white;
+}
+
+
+
+.droplist:hover .dropdown-content
+{
+  display:block;
+  background-color: #2d3c49;
+}
+
+/* ---- Layout Containers ---- */
+.container
+{
+width:100%;
+margin:0 auto;
+text-align:center;
+padding:10px;
+}
+.box
+{
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.pic
+{
+  max-width: 80%;
+  border-radius: 15px;
+  margin: 9px 0;
+}
+
+.skills button
+{
+  border:5px solid white;
+  padding: 7px;
+  border-radius: 15px;
+}
+.skill-1
+{
+  background-color:#FD8117 ;
+}
+.skill-2
+{
+  background-color: #E8FD7D;
+}
+.skill-3
+{
+  background-color: #A2FD7D;
+}
+.skill-4
+{
+  background-color: #7DF4FD;
+}
+.tag
+{
+  background-color: black;
+  color: #f7f5f0;
+  width: 20%;
+  margin: 0 auto;
+  padding:5px;
+
+
+}
+.title
+{
+  background-color: black;
+  color: #f7f5f0;
+  width: 10%;
+  margin: 0 auto;
+  padding: 9px;
+
+
+}
